@@ -2,6 +2,7 @@
 import Layout from '~/layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Note from '~/components/widgets/Note.astro';
 import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
@@ -13,92 +14,86 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Convergent Facilitation — Finding solutions that work for everyone',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
 
-  <Hero
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
+        text: 'Read our case studies',
         href: 'https://github.com/onwidget/astrowind',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:news',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Start learning', href: '#features', icon: 'tabler:plant' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-image.webp', alt: 'Upward pointing arrow made out of many colorful dots' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      <span class="text-accent dark:text-white highlight">Finding solutions that work for </span> everyone
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+Discover breakthrough solutions with a collaborative decision-making process designed to build trust across differences and integrate what's important to everyone involved.
+
     </Fragment>
-  </Hero>
+  </Hero2>
 
-  <!-- Note Widget ******************* -->
-
-  <Note />
 
   <!-- Features Widget *************** -->
 
+
+
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    title="Why choose Convergent Facilitation?"
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
-        description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+        title: 'Everything that matters is included',
+        description: "We leave no stone unturned to discover and capture what's important to all stakeholders in the decision. This creates a solid foundation to explore all sorts of creative solutions.",
+        icon: 'tabler:grain',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'We aim for zero waste',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'We have all and only the necessary discussions, hearing every need, but not every voice. This enables us to capture all that is important to everyone without draining the group’s energy when people repeat what’s already been said.',
+        icon: 'tabler:recycle',
       },
       {
-        title: 'Best Practices',
-        description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+        title: 'We create conditions to make shifts possible', 
+        description: "We don’t expect people to change their position or values, because it’s not necessary for them to agree on specific solutions. All we aim for is to make it possible for people to trust that everyone cares about what matters to them, to see that there are deep principles they all care about regardless of their differences, and to be supported in seeing and caring about what matters to others. This combination is what moves people to orient to the whole. Then they can shift to see that this or that proposal isn’t actually threatening anything that matters to them.",
+        icon: 'tabler:arrows-diagonal-minimize',
       },
       {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+        title: 'We aim for solutions that work for the most powerful and the least powerful', 
+        description: "We go through great efforts to bring in, hear and integrate all that matters to all stakeholders across power differences. Without those with the most power, agreements might just not be implemented. Without those with the least power, agreements might simply not work. We know that this is a key condition for a practical, sustainable and implementable outcome.",
+        icon: 'tabler:hearts',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'We never settle for compromise',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'We know that when people compromise an agreement is more likely to be broken later. We never push anyone to agree to anything. We invite dissent to know more of what’s important and then we keep integrating what we hear until we are done. Then everyone is on board',
+        icon: 'tabler:star',
       },
     ]}
+  />
+
+  <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Read impacts and experiences using Convergent Facilitation"
+    information={`In these posts we share with you 
+                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
+                        Astro is a very interesting technology. Thanks.
+                `}
   />
 
   <!-- Content Widget **************** -->
@@ -124,9 +119,7 @@ const metadata = {
           'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+    image={{ src: '~/assets/images/cobbled_path.jpg', alt: 'Cobbled Path' }}
     }}
   >
     <Fragment slot="content">
@@ -217,35 +210,32 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Start your journey to become a Convergent Facilitator yourself"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Participate in an Intro Course</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
-        icon: 'tabler:package',
+          "About two to three times a year we offer an introduction to the principles, practices and processes involved in Convergent Facilitation — and of course many other aspiring and inspiring Convergent Facilitators!",
+        icon: 'tabler:sparkles',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Start Praciticing and Learning in Community</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          "Applying Convergent Facilitation — may it be weaving in CF principles or offering a full process to a large group — can be tough! We offer your different ways to practice in safe spaces where you can stumble and fall and learn with every step you take.",
+        icon: 'tabler:heart-handshake',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Start Applying Convergent Facilitation</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Discover more and more opportunities where you can bring Convergent Facilitation in a way that works for you and with the community supporting you every step along the way.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
-        icon: 'tabler:check',
+        title: 'Join Us in Bringing Convergence to the World!',
+        icon: 'tabler:sparkles',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
+    image={{ src: '~/assets/images/cobbled_path.jpg', alt: 'Cobbled Path' }}
   />
 
   <!-- Features2 Widget ************** -->
@@ -312,15 +302,6 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
-                `}
-  />
 
   <!-- FAQs Widget ******************* -->
 

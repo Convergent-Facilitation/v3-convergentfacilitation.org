@@ -1,22 +1,22 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Convergent Facilitation
+  site: 'https://v3.convergentfacilitaton.org'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: 
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Convergent Facilitation
+    template: '%s — Convergent Facilitation'
+  description: "\U0001F680 Solutions that work for everyone."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Convergent Facilitation
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -69,4 +69,4 @@ analytics:
       id: null # or "G-XXXXXXXXXX"
 
 ui:
-  theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  theme: 'light' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
