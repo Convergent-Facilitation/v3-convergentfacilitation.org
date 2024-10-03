@@ -1,29 +1,19 @@
 ---
+---
+
 import Layout from '~/layouts/PageLayout.astro';
 import HeroText from '~/components/widgets/HeroText.astro';
 import ContactUs from '~/components/widgets/Contact.astro';
-import Features3 from '~/components/widgets/Features3.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
-const metadata = {
-  title: 'Contact',
-};
----
+# Test
+<Layout >
 
-<Layout metadata={metadata}>
-  <!-- HeroText Widget ******************* -->
-
-  <HeroText tagline="Contact" title="Reach out" />
-<div style={{
-    display: 'grid',
-    placeItems: 'center',
-    gridAutoFlow: 'row', // Ensure items flow in a column
-    minHeight: '100vh',
-    gap: '2rem', // Add gap between components
-  }}>
+  <HeroText tagline="Contact" title="Let's Connect!" />
 
 
 
-  <Features3
+  <Features2
     title="Drop us a message today!"
     items={[
       {
@@ -33,15 +23,13 @@ const metadata = {
       },
     ]}
   />
-
   
-  <HeroText tagline="Newsletter" title="Stay in the loop" id="newsletter" />
+## Subscribe to our newsletter!
   
   <iframe
       src="/constant-contact-form.html"
       style={{width: "30%", height: "800px", border: "none"}}
       title="Constant Contact Form"
     />
-     </div>
-
+    
   </Layout>

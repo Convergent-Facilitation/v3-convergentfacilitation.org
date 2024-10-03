@@ -166,11 +166,55 @@ export const findPostsByIds = async (ids: Array<string>): Promise<Array<Post>> =
 };
 
 /** */
-export const findLatestPosts = async ({ count }: { count?: number }): Promise<Array<Post>> => {
+export const findLatestPosts_old = async ({ count }: { count?: number }): Promise<Array<Post>> => {
+  const _count = count || 4;
+  const posts = await fetchPosts();
+  console.log(posts)
+
+  return posts ? posts.slice(0, _count) : [];
+};
+
+export const findLatestPosts = async ({
+  count,
+  category, // Add this line to receive the category
+}: {
+  count?: number;
+  category?: string; // Add this line to the parameter types
+}): Promise<Array<Post>> => {
   const _count = count || 4;
   const posts = await fetchPosts();
 
-  return posts ? posts.slice(0, _count) : [];
+  // Filter posts by category if specified
+  const filteredPosts = category
+    //? posts.filter(post => post.category === category) // Ensure your post has a category property
+	? posts.filter(post => post.category?.slug.toLowerCase() === category.toLowerCase())
+    : posts;
+
+  return filteredPosts.slice(0, _count);
+};
+
+export const findLatestPosts_old2 = async ({
+  count,
+  category, // Add this line to receive the category
+}: {
+  count?: number;
+  category?: string; // Add this line to the parameter types
+}): Promise<Array<Post>> => {
+  const _count = count || 4;
+  const posts = await fetchPosts();
+ // console.log(posts)
+  console.log(category)
+
+  // Filter posts by category if specified
+  const filteredPosts = category
+	? posts.filter(
+        post =>
+          post.category?.slug.toLowerCase() === category.slug.toLowerCase()
+     )
+
+    : posts;
+
+  return filteredPosts.slice(0, _count);
 };
 
 /** */

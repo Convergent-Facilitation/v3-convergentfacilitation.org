@@ -15,22 +15,27 @@ export interface Props extends Widget {
   linkUrl?: string | URL;
   information?: string;
   count?: number;
+  category?: {
+    slug: string;
+    title: string;
+  };
 }
 
 const {
   title = await Astro.slots.render('title'),
-  linkText = 'View all posts',
-  linkUrl = getBlogPermalink(),
+  linkText = await Astro.slots.render('linkText'),
+  linkUrl = await Astro.slots.render('linkUrl'),
   information = await Astro.slots.render('information'),
   count = 4,
 
+  category,
   id,
   isDark = false,
   classes = {},
   bg = await Astro.slots.render('bg'),
 } = Astro.props;
 
-const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count }) : [];
+const posts = APP_BLOG.isEnabled ? await findLatestPosts({ count, category }) : [];
 ---
 
 {

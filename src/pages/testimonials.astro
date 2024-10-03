@@ -1,0 +1,62 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Testimonials from '~/components/widgets/Testimonials.astro';
+
+
+const metadata = {
+  title: 'Convergent Facilitation — Finding solutions that work for everyone',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+
+
+  <!-- Testimonials Widget *********** -->
+
+  <Testimonials
+    title="Appreciation for Convergent Facilitation"
+    testimonials={[
+      {
+        testimonial: `There is a belief in our culture that we have to choose between collaboration and efficiency. It’s one or the other. Convergent Facilitation shows that there is an efficient path—perhaps the only truly efficient one—that gets everyone’s needs met.`,
+        name: 'Frederic Laloux',
+        job: 'Author of "Reinventing Organisations"',
+        image: {
+          src: '~/assets/images/frederic-laloux.jpg',
+          alt: 'Frederic Laloux Image',
+        },
+      },
+      {
+        testimonial: `Convergent Facilitation will steer us away from wasting time and accelerate our work for the Great Turning`,
+        name: 'Joanna Macy',
+        job: 'Root teacher of the "Work That Reconnects"',
+        image: {
+          src: '~/assets/images/joanna-macy.jpg',
+          alt: 'Joanna Macy Image',
+        },
+      },
+      {
+        testimonial:
+          'Convergent Facilitation is a revolutionary new way of collaborating by creating space for all needs to be heard, inviting dissent without fear or animosity, and attending to power dynamics that are in the room.',
+        name: 'Aaron Goggans',
+        job: 'Writer, facilitator, and organizer with the Movement for Black Lives',
+        image: {
+          src: '~/assets/images/aaron-goggans.jpg',
+          alt: 'Aaron Goggans Image',
+        },
+      },
+      {
+        testimonial:
+          'Convergent Facilitation is a vision of democracy that is something other than a six-hour meeting after which we are too tired to implement any decision. It opens a path towards a democratic praxis where we all take responsibility for the whole and make decisions that meet the needs of everyone.',
+        name: 'Kazu Haga',
+        job: 'Founder, East Point Peace Academy; author, Healing Resistance',
+        image: {
+          src: '~/assets/images/aaron-goggans.jpg',
+          alt: 'Aaron Goggans Image',
+        },
+      },
+    ]}
+
+  />
+
+</Layout>

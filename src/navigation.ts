@@ -15,15 +15,11 @@ export const headerData = {
       links: [
         {
           text: 'Case Studies',
-          href: getPermalink('/landing/lead-generation'),
+          href: getPermalink('/case-studies'),
         },
         {
           text: 'Videos',
-          href: getPermalink('/landing/lead-generation'),
-        },
-		{
-		  text: 'Blog',
-          href: getPermalink('/landing/lead-generation'),
+          href: getPermalink('/t/videos'),
         },
 	  ]
     },
@@ -32,11 +28,11 @@ export const headerData = {
       links: [
         {
           text: 'Reach out',
-          href: getPermalink('/reach-out'),
+          href: getPermalink('/contact'),
         },
         {
           text: 'Newsletter',
-          href: getPermalink('/newsletter'),
+          href: getPermalink('/contact#newsletter'),
         },
       ],
     },
