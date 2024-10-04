@@ -11,7 +11,7 @@ metadata:
   title:
     default: Convergent Facilitation
     template: '%s — Convergent Facilitation'
-  description: "\U0001F680 Solutions that work for everyone."
+  description: "Discover breakthrough solutions with a collaborative decision-making process designed to build trust across differences and integrate what's important to everyone involved."
   robots:
     index: true
     follow: true
