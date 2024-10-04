@@ -21,6 +21,10 @@ export const headerData = {
           text: 'Videos',
           href: getPermalink('/t/videos'),
         },
+        {
+          text: 'Materials',
+          href: getPermalink('/materials'),
+        },
 	  ]
     },
     {
@@ -45,47 +49,33 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Content',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: 'Case Studies', href: '/case-studies' },
+        { text: 'Videos', href: '/t/videos' },
+        { text: 'Materials', href: '/t/materials' },
+        { text: 'Book', href: '/book-highest-common-denominator' },
+        { text: 'All our content', href: '/all' },
       ],
     },
     {
-      title: 'Platform',
+      title: 'Engage',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: 'Events', href: '/events' },
+        { text: 'Community of Practice', href: 'https://community.convergentfacilitation.org' },
+        { text: 'Work with us', href: '/contact' },
       ],
     },
     {
-      title: 'Support',
+      title: 'More',
       links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
+        { text: 'Contact', href: '/contact' },
+        { text: 'Newsletter', href: '/contact#stay-in-the-loop' },
+        { text: 'Github', href: 'https://github.com/orgs/Convergent-Facilitation/repositories' },
+        { text: 'NGL Community', href: 'https://github.com/orgs/Convergent-Facilitation/repositories' },
+
+        
+
       ],
     },
   ],
@@ -94,13 +84,13 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://x.com/ConvergFacilit',  target: '_blank' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/convergentfacilitation/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/convergentfacilitation' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/orgs/Convergent-Facilitation/repositories', target: '_blank' },
   ],
   footNote: `
-    All rights reserved.
+    Convergent Facilitation — 2020 to present. Built with AstroWind. 
   `,
 };
