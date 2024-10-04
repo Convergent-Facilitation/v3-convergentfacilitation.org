@@ -1,6 +1,6 @@
 site:
   name: Convergent Facilitation
-  site: 'https://v3.convergentfacilitaton.org'
+  site: 'https://convergentfacilitaton.org'
   base: '/'
   trailingSlash: false
 
@@ -44,7 +44,7 @@ apps:
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'all' # Blog main path, you can change this to "articles" (/articles)
       robots:
         index: true
 
@@ -60,7 +60,7 @@ apps:
       robots:
         index: false
 
-    isRelatedPostsEnabled: true
+    isRelatedPostsEnabled: false
     relatedPostsCount: 4
 
 analytics:
