@@ -56,16 +56,14 @@ Discover breakthrough solutions with a collaborative decision-making process des
     actions={[
       {
         variant: 'primary',
-        text: 'Register Now',
-        href: 'https://github.com/onwidget/astrowind',
-        icon: 'tabler:brand-bunpo',
+        text: 'Info & Registration',
+        href: '/cfintro24nov',
+        icon: 'tabler:arrow-badge-right',
       },
     ]}
   />
 
   <!-- Features Widget *************** -->
-
-
 
   <Features
     id="features"
@@ -223,8 +221,8 @@ Discover breakthrough solutions with a collaborative decision-making process des
       <div class="absolute inset-0 bg-purple-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+  
   <!-- Steps Widget ****************** -->
-
   <Steps
     id="journey"
     title="Start your journey to become a Convergent Facilitator yourself"
@@ -233,10 +231,10 @@ Discover breakthrough solutions with a collaborative decision-making process des
         title: 'Step 1: <span class="font-medium">Participate in an Intro Course</span>',
         description:
           "About two to three times a year we offer an introduction to the principles, practices and processes involved in Convergent Facilitation — and of course many other aspiring and inspiring Convergent Facilitators!",
-        icon: 'tabler:sparkles',
+        icon: 'tabler:plant',
       },
       {
-        title: 'Step 2: <span class="font-medium">Start Praciticing and Learning in Community</span>',
+        title: 'Step 2: <span class="font-medium">Start Practicing and Learning in Community</span>',
         description:
           "Applying Convergent Facilitation — may it be weaving in CF principles or offering a full process to a large group — can be tough! We offer your different ways to practice in safe spaces where you can stumble and fall and learn with every step you take.",
         icon: 'tabler:heart-handshake',
@@ -253,6 +251,16 @@ Discover breakthrough solutions with a collaborative decision-making process des
       },
     ]}
     image={{ src: '~/assets/images/cobbled_path.jpg', alt: 'Cobbled Path' }}
+  />
+  
+    <!-- HighlightedPosts Widget ******* -->
+
+  <BlogLatestPosts
+    title="Upcoming Events"
+    information={`Participate in events that will give you an experience of what Convergent Facilitation feels like, give you the opportunity to ask questions to someone who's been out there and done it, get support in taking the first towards becoming a Convergent Facilitator, and deepen your skills and integration of the underlying principles.`}
+    category="events"
+    linkText="View all events"
+    linkUrl="/events"
   />
 
   <!-- FAQs Widget ******************* -->
