@@ -10,6 +10,26 @@ tags:
 category: Drafts
 ---
 
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+
+<CallToAction
+    title="Register for this course"
+    subtitle="Within 3 days after completing the registration you will receive an email with the subject <i>You have been added to CF Intro Course November 2024</i>. <br><br>
+    
+    Please click the invite link we share with you in that email to get access to all *Course Materials (including recordings)."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Register now',
+        href: 'https://forms.gle/3EnhzRc844FnkLZ87',
+        icon: 'tabler:brand-bunpo',
+      },
+      { text: 'Course Materials*', href: 'https://community.convergentfacilitation.org/c/your-courses/cfintro24nov/18', icon: 'tabler:books' },
+    ]}
+  />
+  
+
 # About the Offering
 
 This course is the new iteration of a in-depth introduction to Convergent Facilitation that happened in March 2024, to which we have added 2 special events: one is a live demo by Paul which anyone who has registered can either observe or participate in (by taking a role) - more information here. The other is a Q&A session with Aimee Ryan regarding the California Pest Management project [link to case study page].
@@ -69,25 +89,6 @@ Verene supported Paul in designing and delivering the March introductory course.
 - Aimee Ryan
 Aimee....TODO.add more
 
-import CallToAction from '~/components/widgets/CallToAction.astro';
-
-
-<CallToAction
-    title="Register for this course"
-    subtitle="Within 3 days after completing the registration you will receive an email with the subject <i>You have been added to CF Intro Course November 2024</i>. <br><br>
-    
-    Please click the invite link we share with you in that email to get access to all *Course Materials (including recordings)."
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Register now',
-        href: 'https://forms.gle/3EnhzRc844FnkLZ87',
-        icon: 'tabler:brand-bunpo',
-      },
-      { text: 'Course Materials*', href: 'https://community.convergentfacilitation.org/c/your-courses/cfintro24nov/18', icon: 'tabler:books' },
-    ]}
-  />
-  
 ### About Paul, Verene, and Aimee
 ![image paul](~/assets/images/paul_kahawatte.jpg)
 
