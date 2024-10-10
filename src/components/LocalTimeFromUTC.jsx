@@ -6,7 +6,8 @@ function LocalTimeFromUTC({ startUtcTime, endUtcTime }) {
   const end = new Date(endUtcTime);
 
   const timeOnlyFormat = { hour: '2-digit', minute: '2-digit' };
-  const dateOnlyFormat = { year: 'numeric', month: 'short', timeZoneName: 'long', day: 'numeric'}
+  const timeAndTimezoneFormat = { hour: '2-digit', minute: '2-digit',  timeZoneName: 'short' };
+  const dateOnlyFormat = { month: 'short', day: 'numeric'}
 
 
   const formatTime = (utcDate, options = {}) => {
@@ -17,12 +18,12 @@ function LocalTimeFromUTC({ startUtcTime, endUtcTime }) {
 
 
   const formattedStartTime = formatTime(start, timeOnlyFormat);
-  const formattedEndTime = formatTime(end, timeOnlyFormat);
+  const formattedEndTime = formatTime(end, timeAndTimezoneFormat);
   const formattedStartDate = formatTime(start, dateOnlyFormat);
 
   return (
     <span>
-	  <b>{formattedStartTime} - {formattedEndTime}</b>, {formattedStartDate}
+	  <b>{formattedStartDate}, {formattedStartTime} - {formattedEndTime}</b>, 
     </span>
   );
 }
