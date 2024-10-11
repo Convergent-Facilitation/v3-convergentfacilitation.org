@@ -12,7 +12,7 @@ function LocalTimeFromUTC({ startUtcTime, endUtcTime }) {
 
   const formatTime = (utcDate, options = {}) => {
     const date = new Date(utcDate);
-    return new Intl.DateTimeFormat('en-US', options).format(date);
+    return new Intl.DateTimeFormat(undefined, options).format(date);
     // 'en-US' can be replaced with the desired locale
   };
 
