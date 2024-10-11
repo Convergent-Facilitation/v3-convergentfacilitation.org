@@ -85,6 +85,10 @@
   @apply rotate-45 translate-y-[-8px] translate-x-[14px];
 }
 
+ul {
+  margin: 0px !important;
+}
+
 /* To deprecated */
 
 .dd *:first-child {
