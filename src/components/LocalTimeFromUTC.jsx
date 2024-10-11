@@ -23,7 +23,7 @@ function LocalTimeFromUTC({ startUtcTime, endUtcTime }) {
 
   return (
     <span>
-	  <b>{formattedStartDate}, {formattedStartTime} - {formattedEndTime}</b>, 
+	  {formattedStartDate}, {formattedStartTime} - {formattedEndTime} 
     </span>
   );
 }
