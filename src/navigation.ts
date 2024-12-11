@@ -36,7 +36,7 @@ export const headerData = {
         },
         {
           text: 'Newsletter',
-          href: getPermalink('/contact#newsletter'),
+          href: getPermalink('/newsletter'),
         },
       ],
     },
@@ -70,7 +70,7 @@ export const footerData = {
       title: 'More',
       links: [
         { text: 'Contact', href: '/contact' },
-        { text: 'Newsletter', href: '/contact#stay-in-the-loop' },
+        { text: 'Newsletter', href: '/newsletter' },
         { text: 'Github', href: 'https://github.com/orgs/Convergent-Facilitation/repositories' },
         { text: 'NGL Community', href: 'https://github.com/orgs/Convergent-Facilitation/repositories' },
 
