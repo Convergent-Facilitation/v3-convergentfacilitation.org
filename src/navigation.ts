@@ -25,6 +25,10 @@ export const headerData = {
           text: 'Materials',
           href: getPermalink('/materials'),
         },
+        {
+          text: 'CF App',
+          href: getPermalink('/app'),
+        },
 	  ]
     },
     {
