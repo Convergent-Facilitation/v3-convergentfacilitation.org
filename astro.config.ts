@@ -24,6 +24,12 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
+  redirects: {
+	'/app': {
+      status: 302,
+      destination: 'https://www.convergence.tools'
+    }
+  },
 
   integrations: [
     tailwind({
