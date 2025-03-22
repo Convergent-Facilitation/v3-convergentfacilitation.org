@@ -63,7 +63,8 @@ const postCollection = defineCollection({
   }),
 });
 
-<!-- Defining Comment tables-->
+
+
 import { defineDb, defineTable, column } from 'astro:db';
 
 const Comment = defineTable({
